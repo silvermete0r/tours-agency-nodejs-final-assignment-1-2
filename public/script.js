@@ -1,16 +1,46 @@
 // Fetch and display tours dynamically
 document.addEventListener("DOMContentLoaded", function () {
+    fetchAndDisplayTours();
+});
+
+function fetchAndDisplayTours() {
     fetch('/tours')
         .then(response => response.json())
         .then(tours => {
             const tourContainer = document.getElementById('tourContainer');
+            tourContainer.innerHTML = ''; // Clear existing content
+
             tours.forEach(tour => {
                 const card = createTourCard(tour);
                 tourContainer.appendChild(card);
             });
         })
         .catch(error => console.error('Error fetching tours:', error));
-});
+}
+
+function searchTours() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    
+    // Fetch tours and filter based on search input
+    fetch('/tours')
+        .then(response => response.json())
+        .then(tours => {
+            const filteredTours = tours.filter(tour =>
+                tour.name.toLowerCase().includes(searchInput) ||
+                tour.country.toLowerCase().includes(searchInput) ||
+                tour.city.toLowerCase().includes(searchInput)
+            );
+
+            const tourContainer = document.getElementById('tourContainer');
+            tourContainer.innerHTML = ''; // Clear existing content
+
+            filteredTours.forEach(tour => {
+                const card = createTourCard(tour);
+                tourContainer.appendChild(card);
+            });
+        })
+        .catch(error => console.error('Error searching tours:', error));
+}
 
 function createTourCard(tour) {
     const card = document.createElement('div');

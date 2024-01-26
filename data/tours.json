@@ -2,7 +2,7 @@
   {
     "id": 1,
     "destinationId": 1,
-    "name": "Romantic Getaway",
+    "name": "Romantic Getaway ❤️",
     "country": "France",
     "city": "Paris",
     "price": 1200,
@@ -14,10 +14,7 @@
       "Day 4: Spa Day and Leisure",
       "Day 5: Departure"
     ],
-    "departure": [
-      "2024-05-01",
-      "2024-06-01"
-    ]
+    "departure": ""
   },
   {
     "id": 2,

@@ -65,6 +65,14 @@
 <div class="container mt-4">
     <h1 class="mb-4">Travel Agency Tours</h1>
 
+    <!-- Search Bar -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Search tours..." id="searchInput">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="searchTours()">Search</button>
+        </div>
+    </div>
+
     <div class="row" id="tourContainer">
         <!-- Tour Cards will be dynamically added here -->
     </div>
