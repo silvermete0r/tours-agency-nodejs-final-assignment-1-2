@@ -1,6 +1,15 @@
 # Tour Agencies Web Application
 
-This is a simple web application for managing tour agencies, where CRUD (Create, Read, Update, Delete) operations are implemented using Node.js and Express.js. The application provides a basic structure for handling tour data, allowing you to perform operations like adding new tours, viewing tour details, updating tour information, and deleting tours.
+This is a simple web application for managing tour agencies, where CRUD (Create, Read, Update, Delete) operations are implemented using Node.js and Express.js. The application provides a basic structure for handling tour data, allowing you to perform operations like adding new tours, viewing tour details, updating tour information, and deleting tours
+
+![image](https://github.com/silvermete0r/tours-agency-nodejs-final-assignment-1-2/assets/108217670/9d5efff3-e8a6-4f03-a7b6-a6b5728c42c8)
+
+![image](https://github.com/silvermete0r/tours-agency-nodejs-final-assignment-1-2/assets/108217670/756a3570-683a-419c-8341-ff4e0312b7c5)
+
+![image](https://github.com/silvermete0r/tours-agency-nodejs-final-assignment-1-2/assets/108217670/182a5e16-846c-4a13-8e7a-1b3af251f504)
+
+![image](https://github.com/silvermete0r/tours-agency-nodejs-final-assignment-1-2/assets/108217670/8ad208e0-54aa-4817-b75c-ce739a78c791)
+
 
 ## Table of Contents
 
